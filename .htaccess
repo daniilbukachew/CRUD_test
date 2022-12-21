@@ -1,0 +1,8 @@
+# Включаем перенаправление
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule .* php/controller.php [L]
